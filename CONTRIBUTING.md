@@ -76,6 +76,7 @@ docs(nn-xor): record final architecture and loss
 
 ### Python setup
 
+- Install conda if you don't have it: [Miniconda installation guide](https://www.anaconda.com/docs/getting-started/miniconda/install).
 - Use a conda environment per project. Do not install packages globally.
 - Pin dependency versions in `requirements.txt`.
 
