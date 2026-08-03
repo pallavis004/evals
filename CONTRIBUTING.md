@@ -76,12 +76,12 @@ docs(nn-xor): record final architecture and loss
 
 ### Python setup
 
-- Use a virtual environment per project. Do not install packages globally.
+- Use a conda environment per project. Do not install packages globally.
 - Pin dependency versions in `requirements.txt`.
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
+conda create -n nn-xor python=3.10
+conda activate nn-xor
 pip install -r requirements.txt
 pytest
 ```
