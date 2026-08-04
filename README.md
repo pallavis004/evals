@@ -22,6 +22,7 @@ Solutions are reviewed like real PRs. Once merged, they stay in the repo so othe
 
 1. [`exercises/nn-xor`](exercises/nn-xor/README.md) — implement a feedforward neural network from scratch in NumPy that learns XOR.
 2. [`exercises/mnist-classifier`](exercises/mnist-classifier/README.md) — extend it to a multi-class handwritten digit classifier (softmax, mini-batch SGD, train/test split).
+3. [`exercises/cnn-from-scratch`](exercises/cnn-from-scratch/README.md) — extend it again to a convolutional network (hand-implemented conv2d/maxpool), compared against the level-2 model on parameters, accuracy, and training time.
 
 ## Ground rules
 
