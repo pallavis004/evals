@@ -72,6 +72,13 @@ docs(nn-xor): record final architecture and loss
 - One logical change per commit. Do not squash the whole exercise into a single final commit — we want to see your process.
 - No `WIP`, `fix2`, `asdf` style messages in the final history.
 
+## File naming and structure
+
+- Solutions live in `solutions/<your-name>/<exercise-name>/`, matching the exercise's own directory name exactly (e.g. `solutions/yourname/nn-xor/`).
+- Documentation files use the `.md` extension — `README.md`, not `README`.
+- Python files use `snake_case` — `make_csv.py`, not `makecsv.py`.
+- Don't commit generated datasets or other large data files. Commit the script that generates them instead (or document where to fetch them), so the repo stays small and the data is reproducible rather than a static blob in git history.
+
 ## Development environment
 
 ### Python setup
