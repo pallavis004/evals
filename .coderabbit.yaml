@@ -11,6 +11,18 @@ reviews:
   auto_review:
     enabled: true
     drafts: false
+  pre_merge_checks:
+    custom_checks:
+      - name: "Commit and File Naming Conventions"
+        mode: "warning"
+        instructions: >
+          Pass/fail criteria: every commit message in this PR must follow
+          Conventional Commits (type(scope): summary) as defined in
+          CONTRIBUTING.md — reject vague messages like "WIP", "fix2", "asdf",
+          or "Save current changes". Every exercise/solution README file must
+          use a .md extension. Flag any data files (e.g. .csv) committed
+          under solutions/ that aren't explicitly required by the exercise
+          spec.
   path_filters:
     - "!**/*.lock"
     - "!**/.venv/**"
