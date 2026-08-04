@@ -1,0 +1,32 @@
+language: en-US
+tone_instructions: "This repo hosts intern practice exercises. Solutions live under solutions/<name>/<exercise>/. Review PRs like a mentor would: point out correctness bugs, unclear naming, and missed edge cases, but don't nitpick style that a formatter/linter would already catch."
+early_access: false
+reviews:
+  profile: assertive
+  request_changes_workflow: false
+  high_level_summary: true
+  poem: false
+  review_status: true
+  collapse_walkthrough: true
+  auto_review:
+    enabled: true
+    drafts: false
+  path_filters:
+    - "!**/*.lock"
+    - "!**/.venv/**"
+  path_instructions:
+    - path: "exercises/**"
+      instructions: >
+        This is exercise specification content maintained by mentors, not intern
+        submissions. Flag unclear or inconsistent requirements, but don't review
+        it as if it were a solution.
+    - path: "solutions/**/*.py"
+      instructions: >
+        This is an intern's solution to a from-scratch ML exercise (NumPy only,
+        no autograd/frameworks unless the exercise explicitly allows it). Check
+        that no disallowed library is imported for the core model/training logic,
+        that gradients are actually derived rather than approximated, and that
+        train/test split and mini-batching (where required) are implemented
+        manually rather than via a framework utility.
+chat:
+  auto_reply: true
