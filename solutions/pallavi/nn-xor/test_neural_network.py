@@ -41,7 +41,7 @@ def train_xor_network():
 
 def test_xor_predictions_are_correct():
     """Check that the trained network's rounded predictions match the XOR truth table."""
-    X, Y, output = train_xor_network()
+    _, Y, output = train_xor_network()
     predicted_classes = (output >= 0.5).astype(int)
     expected_classes = Y.astype(int)
     assert np.array_equal(predicted_classes, expected_classes)
@@ -49,6 +49,6 @@ def test_xor_predictions_are_correct():
 
 def test_loss_is_low_after_training():
     """Check that the trained network's final loss is below an acceptable threshold."""
-    X, Y, output = train_xor_network()
+    _, Y, output = train_xor_network()
     final_loss = calculate_loss(output, Y)
     assert final_loss < 0.01
