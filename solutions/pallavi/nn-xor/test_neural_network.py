@@ -3,6 +3,7 @@ from neural_network import forward, backward, calculate_loss
 
 
 def train_xor_network():
+    """Train a fresh XOR network and return the inputs, targets, and final predictions."""
     X = np.array([
         [0, 0],
         [0, 1],
@@ -39,6 +40,7 @@ def train_xor_network():
 
 
 def test_xor_predictions_are_correct():
+    """Check that the trained network's rounded predictions match the XOR truth table."""
     X, Y, output = train_xor_network()
     predicted_classes = (output >= 0.5).astype(int)
     expected_classes = Y.astype(int)
@@ -46,6 +48,7 @@ def test_xor_predictions_are_correct():
 
 
 def test_loss_is_low_after_training():
+    """Check that the trained network's final loss is below an acceptable threshold."""
     X, Y, output = train_xor_network()
     final_loss = calculate_loss(output, Y)
     assert final_loss < 0.01

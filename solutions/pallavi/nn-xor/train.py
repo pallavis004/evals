@@ -1,3 +1,4 @@
+"""Train a small feedforward network on the XOR dataset and print predictions."""
 import numpy as np
 from neural_network import forward, backward, calculate_loss
 
